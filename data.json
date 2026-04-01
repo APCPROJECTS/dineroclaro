@@ -1,0 +1,661 @@
+{
+  "ultima_actualizacion": "2026-04-01",
+  "creditos": [
+    {
+      "name": "BROU",
+      "tipo": "Banco estatal",
+      "logo": "BR",
+      "lc": "#22C55E",
+      "costo": 23,
+      "costoR": "23% TEA",
+      "monto": "Hasta $700.000",
+      "plazo": "Hasta 60 meses",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 90,
+      "desc": "El banco público más grande de Uruguay. Tasas bajas para empleados y jubilados con convenio.",
+      "pros": [
+        "Tasa más baja del mercado",
+        "Sin costo de apertura",
+        "Red de sucursales amplia"
+      ],
+      "cons": [
+        "Requiere cuenta BROU",
+        "Trámites más lentos",
+        "Necesita documentación completa"
+      ],
+      "tags": [
+        "bajo costo",
+        "seguro",
+        "convenio"
+      ],
+      "retiro": true,
+      "clearing": false,
+      "jubilados": true
+    },
+    {
+      "name": "Santander",
+      "tipo": "Banco privado",
+      "logo": "SA",
+      "lc": "#EF4444",
+      "costo": 29,
+      "costoR": "29% TEA",
+      "monto": "Hasta $500.000",
+      "plazo": "Hasta 48 meses",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "independiente"
+      ],
+      "score": 75,
+      "desc": "Banco privado internacional con amplia red. Buen servicio digital.",
+      "pros": [
+        "App móvil excelente",
+        "Aprobación rápida",
+        "Sucursales en todo el país"
+      ],
+      "cons": [
+        "Tasa más alta",
+        "Requiere cuenta Santander",
+        "Seguro obligatorio"
+      ],
+      "tags": [
+        "digital",
+        "rápido"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": false
+    },
+    {
+      "name": "BBVA",
+      "tipo": "Banco privado",
+      "logo": "BB",
+      "lc": "#3B82F6",
+      "costo": 28,
+      "costoR": "28% TEA",
+      "monto": "Hasta $450.000",
+      "plazo": "Hasta 48 meses",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "independiente"
+      ],
+      "score": 72,
+      "desc": "Banco internacional con buen producto digital y proceso ágil.",
+      "pros": [
+        "Proceso 100% online",
+        "Sin papeles físicos",
+        "Tasa competitiva"
+      ],
+      "cons": [
+        "Requiere cuenta BBVA",
+        "Cobertura limitada interior"
+      ],
+      "tags": [
+        "digital",
+        "online"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": false
+    },
+    {
+      "name": "Itaú",
+      "tipo": "Banco privado",
+      "logo": "IT",
+      "lc": "#F97316",
+      "costo": 30,
+      "costoR": "30% TEA",
+      "monto": "Hasta $400.000",
+      "plazo": "Hasta 36 meses",
+      "top": false,
+      "perfiles": [
+        "empleado"
+      ],
+      "score": 68,
+      "desc": "Banco privado con amplia red. Requiere ser cliente con cuenta.",
+      "pros": [
+        "Red amplia",
+        "Buen servicio al cliente"
+      ],
+      "cons": [
+        "Tasa alta",
+        "Solo clientes con cuenta",
+        "Plazo corto"
+      ],
+      "tags": [
+        "banco tradicional"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": false
+    },
+    {
+      "name": "Scotiabank",
+      "tipo": "Banco privado",
+      "logo": "SC",
+      "lc": "#EF4444",
+      "costo": 31,
+      "costoR": "31% TEA",
+      "monto": "Hasta $350.000",
+      "plazo": "Hasta 36 meses",
+      "top": false,
+      "perfiles": [
+        "empleado"
+      ],
+      "score": 65,
+      "desc": "Banco canadiense con presencia en Uruguay.",
+      "pros": [
+        "Proceso ágil",
+        "Atención personalizada"
+      ],
+      "cons": [
+        "Tasa alta",
+        "Solo empleados en relación de dependencia"
+      ],
+      "tags": [
+        "banco privado"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": false
+    }
+  ],
+  "cooperativas": [
+    {
+      "name": "COPAC",
+      "tipo": "Cooperativa",
+      "logo": "CO",
+      "lc": "#8B5CF6",
+      "costo": 30.34,
+      "costoR": "30.34% TEA",
+      "monto": "Hasta $300.000",
+      "plazo": "Hasta 60 meses",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 82,
+      "desc": "Cooperativa de ahorro y crédito. Acepta personas en clearing y sin recibo de sueldo.",
+      "pros": [
+        "Acepta clearing",
+        "Sin recibo de sueldo",
+        "Socio = dueño"
+      ],
+      "cons": [
+        "Debe hacerse socio",
+        "Tasa media-alta",
+        "Proceso presencial"
+      ],
+      "tags": [
+        "acepta clearing",
+        "sin recibo",
+        "cooperativa"
+      ],
+      "retiro": true,
+      "clearing": true,
+      "jubilados": true
+    },
+    {
+      "name": "ACAC",
+      "tipo": "Cooperativa",
+      "logo": "AC",
+      "lc": "#7C3AED",
+      "costo": 32,
+      "costoR": "32% TEA",
+      "monto": "Hasta $200.000",
+      "plazo": "Hasta 48 meses",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado"
+      ],
+      "score": 70,
+      "desc": "Cooperativa de crédito con foco en empleados públicos y jubilados.",
+      "pros": [
+        "Descuento por planilla",
+        "Jubilados bienvenidos"
+      ],
+      "cons": [
+        "Solo asociados",
+        "Monto limitado"
+      ],
+      "tags": [
+        "cooperativa",
+        "jubilados"
+      ],
+      "retiro": true,
+      "clearing": false,
+      "jubilados": true
+    },
+    {
+      "name": "Fucerep",
+      "tipo": "Cooperativa",
+      "logo": "FU",
+      "lc": "#6D28D9",
+      "costo": 33,
+      "costoR": "33% TEA",
+      "monto": "Hasta $150.000",
+      "plazo": "Hasta 36 meses",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 65,
+      "desc": "Cooperativa accesible para trabajadores independientes y jubilados.",
+      "pros": [
+        "Acepta independientes",
+        "Proceso sencillo"
+      ],
+      "cons": [
+        "Monto bajo",
+        "Tasa alta"
+      ],
+      "tags": [
+        "cooperativa",
+        "independiente"
+      ],
+      "retiro": true,
+      "clearing": true,
+      "jubilados": true
+    }
+  ],
+  "tarjetas": [
+    {
+      "name": "OCA",
+      "tipo": "Tarjeta de crédito",
+      "logo": "OC",
+      "lc": "#F59E0B",
+      "costo": 68,
+      "costoR": "68% TEA",
+      "monto": "Límite según perfil",
+      "plazo": "Revolving",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 78,
+      "desc": "La tarjeta de crédito más popular de Uruguay. Acepta perfiles sin historial.",
+      "pros": [
+        "Fácil de obtener",
+        "Descuentos en comercios",
+        "Acepta clearing"
+      ],
+      "cons": [
+        "Tasa muy alta",
+        "Fácil endeudarse",
+        "Costo mantenimiento"
+      ],
+      "tags": [
+        "popular",
+        "acepta clearing",
+        "descuentos"
+      ],
+      "retiro": true,
+      "clearing": true,
+      "jubilados": true
+    },
+    {
+      "name": "Visa BROU",
+      "tipo": "Tarjeta de crédito",
+      "logo": "VB",
+      "lc": "#1D4ED8",
+      "costo": 52,
+      "costoR": "52% TEA",
+      "monto": "Límite según perfil",
+      "plazo": "Revolving",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado"
+      ],
+      "score": 74,
+      "desc": "Tarjeta Visa emitida por BROU. Tasa más baja que tarjetas privadas.",
+      "pros": [
+        "Tasa baja para tarjeta",
+        "Red Visa mundial",
+        "Sin costo primer año"
+      ],
+      "cons": [
+        "Requiere cuenta BROU",
+        "Solo clientes BROU"
+      ],
+      "tags": [
+        "bajo costo",
+        "BROU"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": true
+    },
+    {
+      "name": "MasterCard Santander",
+      "tipo": "Tarjeta de crédito",
+      "logo": "MS",
+      "lc": "#EF4444",
+      "costo": 72,
+      "costoR": "72% TEA",
+      "monto": "Límite según perfil",
+      "plazo": "Revolving",
+      "top": false,
+      "perfiles": [
+        "empleado"
+      ],
+      "score": 65,
+      "desc": "Tarjeta MasterCard de Santander. Beneficios en viajes y compras internacionales.",
+      "pros": [
+        "Beneficios internacionales",
+        "App excelente"
+      ],
+      "cons": [
+        "Tasa muy alta",
+        "Solo clientes Santander"
+      ],
+      "tags": [
+        "viajes",
+        "digital"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": false
+    }
+  ],
+  "prepagas": [
+    {
+      "name": "Prex",
+      "tipo": "Tarjeta prepaga",
+      "logo": "PX",
+      "lc": "#10B981",
+      "costo": 0,
+      "costoR": "Sin intereses",
+      "monto": "Saldo disponible",
+      "plazo": "Inmediato",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 92,
+      "desc": "Tarjeta prepaga virtual y física. Sin costo de mantenimiento. Ideal para compras online.",
+      "pros": [
+        "Sin costo",
+        "Sin requisitos",
+        "Funciona en cualquier comercio"
+      ],
+      "cons": [
+        "No es crédito",
+        "Requiere recarga previa",
+        "Límite = saldo"
+      ],
+      "tags": [
+        "gratis",
+        "sin requisitos",
+        "online"
+      ],
+      "retiro": true,
+      "clearing": true,
+      "jubilados": true
+    },
+    {
+      "name": "Visa Electron",
+      "tipo": "Tarjeta prepaga",
+      "logo": "VE",
+      "lc": "#1D4ED8",
+      "costo": 0,
+      "costoR": "Sin intereses",
+      "monto": "Saldo disponible",
+      "plazo": "Inmediato",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 80,
+      "desc": "Tarjeta prepaga Visa del BROU. Acepta pagos con débito inmediato.",
+      "pros": [
+        "Red Visa",
+        "Sin deuda posible",
+        "BROU respaldo"
+      ],
+      "cons": [
+        "Requiere cuenta BROU",
+        "Sin beneficios especiales"
+      ],
+      "tags": [
+        "BROU",
+        "débito",
+        "seguro"
+      ],
+      "retiro": true,
+      "clearing": true,
+      "jubilados": true
+    },
+    {
+      "name": "Redpagos Card",
+      "tipo": "Tarjeta prepaga",
+      "logo": "RP",
+      "lc": "#F59E0B",
+      "costo": 0,
+      "costoR": "Sin intereses",
+      "monto": "Saldo disponible",
+      "plazo": "Inmediato",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 72,
+      "desc": "Tarjeta prepaga disponible en locales Redpagos. Sin trámites bancarios.",
+      "pros": [
+        "Sin cuenta bancaria",
+        "Disponible en kioscos",
+        "Proceso inmediato"
+      ],
+      "cons": [
+        "Comisión de recarga",
+        "Límite bajo"
+      ],
+      "tags": [
+        "accesible",
+        "kioscos",
+        "sin banco"
+      ],
+      "retiro": false,
+      "clearing": true,
+      "jubilados": true
+    }
+  ],
+  "billeteras": [
+    {
+      "name": "Mercado Pago",
+      "tipo": "Billetera digital",
+      "logo": "MP",
+      "lc": "#009EE3",
+      "costo": 0,
+      "costoR": "Sin intereses",
+      "monto": "Saldo disponible",
+      "plazo": "Inmediato",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 90,
+      "desc": "Billetera digital de Mercado Libre. Permite cobrar, pagar y transferir dinero gratis.",
+      "pros": [
+        "Transferencias gratis",
+        "QR en miles de comercios",
+        "Inversión automática"
+      ],
+      "cons": [
+        "No es banco",
+        "Soporte lento",
+        "App puede ser compleja"
+      ],
+      "tags": [
+        "gratis",
+        "QR",
+        "transferencias"
+      ],
+      "retiro": true,
+      "clearing": true,
+      "jubilados": true
+    },
+    {
+      "name": "Abitab",
+      "tipo": "Billetera digital",
+      "logo": "AB",
+      "lc": "#EF4444",
+      "costo": 0,
+      "costoR": "Sin intereses",
+      "monto": "Saldo disponible",
+      "plazo": "Inmediato",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 82,
+      "desc": "Red de pagos Abitab con billetera digital. Muy usada para pagos de servicios.",
+      "pros": [
+        "Red de locales amplia",
+        "Acepta efectivo",
+        "Pagos de servicios fáciles"
+      ],
+      "cons": [
+        "Menos funciones digitales",
+        "Interfaz básica"
+      ],
+      "tags": [
+        "efectivo",
+        "servicios",
+        "accesible"
+      ],
+      "retiro": true,
+      "clearing": true,
+      "jubilados": true
+    },
+    {
+      "name": "RedPagos",
+      "tipo": "Billetera digital",
+      "logo": "RE",
+      "lc": "#F59E0B",
+      "costo": 0,
+      "costoR": "Sin intereses",
+      "monto": "Saldo disponible",
+      "plazo": "Inmediato",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 75,
+      "desc": "Red de cobranzas y pagos. Permite pagar servicios y realizar transferencias básicas.",
+      "pros": [
+        "Red de locales",
+        "Sin requisitos",
+        "Pagos de servicios"
+      ],
+      "cons": [
+        "Funciones limitadas",
+        "Comisiones en algunos servicios"
+      ],
+      "tags": [
+        "pagos",
+        "servicios"
+      ],
+      "retiro": true,
+      "clearing": true,
+      "jubilados": true
+    }
+  ],
+  "bnpl": [
+    {
+      "name": "dLocal BNPL",
+      "tipo": "Cuotas sin tarjeta",
+      "logo": "DL",
+      "lc": "#6366F1",
+      "costo": 45,
+      "costoR": "~45% TEA",
+      "monto": "Hasta $50.000 por compra",
+      "plazo": "3 a 12 cuotas",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "independiente"
+      ],
+      "score": 72,
+      "desc": "Compra en cuotas sin tarjeta de crédito. Disponible en comercios seleccionados.",
+      "pros": [
+        "Sin tarjeta de crédito",
+        "Aprobación instantánea",
+        "Comercios asociados"
+      ],
+      "cons": [
+        "Solo en comercios adheridos",
+        "Tasa alta",
+        "Monto limitado por compra"
+      ],
+      "tags": [
+        "sin tarjeta",
+        "cuotas",
+        "ecommerce"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": false
+    },
+    {
+      "name": "Kueski Pay",
+      "tipo": "Cuotas sin tarjeta",
+      "logo": "KP",
+      "lc": "#8B5CF6",
+      "costo": 50,
+      "costoR": "~50% TEA",
+      "monto": "Hasta $30.000 por compra",
+      "plazo": "2 a 6 cuotas",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "independiente"
+      ],
+      "score": 65,
+      "desc": "BNPL para compras online. Proceso 100% digital sin papeles.",
+      "pros": [
+        "100% online",
+        "Respuesta inmediata",
+        "Sin papeleo"
+      ],
+      "cons": [
+        "Tasa muy alta",
+        "Plazo corto",
+        "Comercios limitados"
+      ],
+      "tags": [
+        "online",
+        "sin papeles",
+        "rápido"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": false
+    }
+  ]
+}
