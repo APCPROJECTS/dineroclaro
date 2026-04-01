@@ -267,6 +267,27 @@ fetch('data.json')
   .then(r => r.json())
   .then(json => {
     data = json;
+    // Normalize data format for rendering
+    Object.keys(data).forEach(cat => {
+      if (!Array.isArray(data[cat])) return;
+      data[cat] = data[cat].map(d => {
+        // Score: convert number to object
+        if (typeof d.score === 'number') {
+          const s = d.score / 10;
+          d.score = {costo: Math.min(10, Math.round(s)), acceso: Math.min(10, Math.round(s * 0.9)), velocidad: Math.min(10, Math.round(s * 0.85)), digital: Math.min(10, Math.round(s * 0.8))};
+        }
+        // Tags: convert strings to objects
+        if (d.tags && d.tags.length && typeof d.tags[0] === 'string') {
+          const colors = ['green','blue','neutral','orange'];
+          d.tags = d.tags.map((t, i) => ({t: t, c: colors[i % colors.length]}));
+        }
+        // Retiro/Clearing/Jubilados: convert booleans to strings
+        if (typeof d.retiro === 'boolean') d.retiro = d.retiro ? 'Sí' : 'No';
+        if (typeof d.clearing === 'boolean') d.clearing = d.clearing ? 'Sí acepta' : 'No acepta';
+        if (typeof d.jubilados === 'boolean') d.jubilados = d.jubilados ? 'Sí' : 'No';
+        return d;
+      });
+    });
     // Actualizar fecha en nav
     if(json.ultima_actualizacion){
       document.querySelector('.nav-update').textContent = json.ultima_actualizacion;
