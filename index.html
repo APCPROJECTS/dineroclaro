@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>DineroClaro · Guía Financiera Uruguay 2026</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZHSCQM40J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DZHSCQM40J');
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#F5F4EF;--white:#FFFFFF;--ink:#18170F;--ink2:#3A3930;--muted:#8A8978;
+  --border:#E2DFD4;--border2:#CBC8BA;--surface:#ECEAE2;
+  --green:#1A6B42;--green-bg:#EAF5EF;--green-l:#C8E8D8;
+  --red:#B83232;--red-bg:#FCEAEA;--red-l:#F2C4C4;
+  --yellow:#9A7200;--yellow-bg:#FEF8E7;--yellow-l:#F5E4A0;
+  --blue:#1A4E8C;--blue-bg:#EBF2FB;--blue-l:#C0D8F5;
+  --purple:#6B3FA0;--purple-bg:#F3EDFB;--purple-l:#D8C4F0;
+  --orange:#C05800;--orange-bg:#FEF0E7;--orange-l:#F5CCa0;
+  --teal:#0E7873;--teal-bg:#E8F7F6;--teal-l:#B8E4E2;
+  --accent:#1A6B42;
+  --sh:0 1px 3px rgba(0,0,0,0.07),0 4px 14px rgba(0,0,0,0.05);
+  --sh2:0 4px 12px rgba(0,0,0,0.1),0 12px 28px rgba(0,0,0,0.07);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);min-height:100vh;}
+button,select,input{font-family:'Plus Jakarta Sans',sans-serif;outline:none;}
+
+/* NAV */
+.nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:54px;position:sticky;top:0;z-index:100;box-shadow:0 1px 0 var(--border);}
+.logo{font-family:'Fraunces',serif;font-size:20px;font-weight:900;color:var(--accent);letter-spacing:-0.5px;display:flex;align-items:center;gap:6px;}
+.logo-flag{font-size:16px;}
+.nav-right{display:flex;align-items:center;gap:10px;}
+.nav-badge{font-size:10px;background:var(--green-bg);color:var(--green);border:1px solid var(--green-l);padding:3px 9px;border-radius:20px;font-weight:600;}
+.nav-update{font-size:10px;color:var(--muted);}
+
+/* HERO */
+.hero{background:linear-gradient(140deg,#122B1C 0%,#1A4A2E 50%,#2A6B44 100%);padding:44px 20px 52px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M0 0h20v20H0V0zm20 20h20v20H20V20z'/%3E%3C/g%3E%3C/svg%3E");}
+.hero-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:20px;padding:5px 14px;font-size:11px;color:rgba(255,255,255,0.7);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(26px,5vw,46px);font-weight:900;color:#fff;line-height:1.05;margin-bottom:8px;letter-spacing:-0.5px;}
+.hero h1 em{font-style:italic;color:#7ECFA0;}
+.hero-sub{font-size:13px;color:rgba(255,255,255,0.65);max-width:480px;margin:0 auto 28px;line-height:1.6;}
+.hero-cats{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;}
+.hcat{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.85);cursor:pointer;transition:all 0.15s;}
+.hcat:hover,.hcat.on{background:rgba(255,255,255,0.22);border-color:rgba(255,255,255,0.4);color:#fff;}
+
+/* SIMULATOR */
+.sim-wrap{max-width:740px;margin:-26px auto 0;padding:0 18px;}
+.sim{background:var(--white);border-radius:16px;box-shadow:var(--sh2);padding:22px;border:1px solid var(--border);}
+.sim-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:6px;}
+.sim-row{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;align-items:end;}
+@media(max-width:580px){.sim-row{grid-template-columns:1fr 1fr;}}
+.sf label{display:block;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:4px;}
+.sf input,.sf select{width:100%;border:1.5px solid var(--border2);border-radius:8px;padding:9px 11px;font-size:13px;font-weight:500;color:var(--ink);background:var(--bg);transition:border-color 0.13s;}
+.sf input:focus,.sf select:focus{border-color:var(--accent);}
+.sim-go{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:10px 18px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background 0.13s;}
+.sim-go:hover{background:#155535;}
+.sim-out{margin-top:12px;padding:12px 16px;background:var(--green-bg);border:1px solid var(--green-l);border-radius:8px;display:none;gap:16px;flex-wrap:wrap;}
+.sim-out.on{display:flex;}
+.soi{flex:1;min-width:110px;}
+.soi-l{font-size:9px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:2px;}
+.soi-v{font-family:'Fraunces',serif;font-size:19px;font-weight:700;color:var(--ink);}
+
+/* TABS */
+.tabs-wrap{max-width:960px;margin:28px auto 0;padding:0 18px;}
+.tabs{display:flex;gap:2px;border-bottom:2px solid var(--border);overflow-x:auto;scrollbar-width:none;}
+.tab{padding:9px 16px;font-size:12px;font-weight:600;color:var(--muted);border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;white-space:nowrap;transition:all 0.13s;border-radius:6px 6px 0 0;}
+.tab:hover{color:var(--ink);background:var(--surface);}
+.tab.on{color:var(--accent);border-bottom-color:var(--accent);background:var(--green-bg);}
+
+/* FILTERS */
+.frow{max-width:960px;margin:12px auto 0;padding:0 18px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
+.flbl{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.7px;}
+.fb{padding:5px 12px;border-radius:20px;font-size:11px;font-weight:600;border:1.5px solid var(--border2);background:var(--white);color:var(--ink2);cursor:pointer;transition:all 0.13s;}
+.fb:hover{border-color:var(--accent);color:var(--accent);}
+.fb.on{background:var(--accent);border-color:var(--accent);color:#fff;}
+.ssort{padding:5px 11px;border-radius:20px;font-size:11px;font-weight:600;border:1.5px solid var(--border2);background:var(--white);color:var(--ink2);cursor:pointer;margin-left:auto;}
+
+/* COUNT */
+.rcount{max-width:960px;margin:8px auto 0;padding:0 18px;font-size:11px;color:var(--muted);}
+
+/* CARDS */
+.cards{max-width:960px;margin:10px auto 36px;padding:0 18px;display:flex;flex-direction:column;gap:14px;}
+
+.card{background:var(--white);border-radius:14px;border:1.5px solid var(--border);box-shadow:var(--sh);overflow:hidden;transition:all 0.18s;}
+.card:hover{box-shadow:var(--sh2);transform:translateY(-1px);}
+.card.top{border-color:var(--accent);border-width:2px;}
+
+.top-banner{background:var(--accent);color:#fff;padding:5px 18px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:5px;}
+
+.cbody{padding:18px 20px;display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:start;}
+@media(max-width:600px){.cbody{grid-template-columns:1fr;}}
+
+/* Logo */
+.clogo{width:56px;height:56px;border-radius:11px;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.clogo span{font-family:'Fraunces',serif;font-size:16px;font-weight:700;}
+
+/* Info */
+.cname{font-family:'Fraunces',serif;font-size:17px;font-weight:700;margin-bottom:1px;}
+.ctype{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:6px;}
+.cdesc{font-size:12px;color:var(--ink2);line-height:1.6;margin-bottom:9px;}
+
+/* Score bars */
+.srow{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.slbl{font-size:10px;color:var(--muted);width:80px;flex-shrink:0;}
+.sbg{flex:1;height:4px;background:var(--border);border-radius:3px;overflow:hidden;}
+.sfill{height:100%;border-radius:3px;transition:width 0.5s cubic-bezier(0.34,1.56,0.64,1);}
+.snum{font-size:10px;font-weight:700;width:20px;text-align:right;flex-shrink:0;}
+
+/* Pros cons */
+.pcgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;margin-top:8px;}
+.pci{font-size:11px;display:flex;gap:4px;align-items:flex-start;line-height:1.4;}
+.pci-ico{flex-shrink:0;margin-top:1px;}
+
+/* Tags */
+.tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px;}
+.tag{font-size:9.5px;padding:2px 8px;border-radius:20px;font-weight:600;white-space:nowrap;}
+.tg{background:var(--green-bg);color:var(--green);border:1px solid var(--green-l);}
+.tb{background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-l);}
+.ty{background:var(--yellow-bg);color:var(--yellow);border:1px solid var(--yellow-l);}
+.tr{background:var(--red-bg);color:var(--red);border:1px solid var(--red-l);}
+.tp{background:var(--purple-bg);color:var(--purple);border:1px solid var(--purple-l);}
+.tt{background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-l);}
+.to{background:var(--orange-bg);color:var(--orange);border:1px solid #F5CC90;}
+.tgray{background:var(--surface);color:var(--ink2);border:1px solid var(--border2);}
+
+/* Right panel */
+.cright{min-width:150px;text-align:right;flex-shrink:0;}
+.rate-box{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px 14px;text-align:center;}
+.rate-main{font-family:'Fraunces',serif;font-size:32px;font-weight:900;line-height:1;color:var(--ink);}
+.rate-main.free{color:var(--green);font-size:24px;}
+.rate-unit{font-size:9px;color:var(--muted);margin-top:2px;line-height:1.3;}
+.rate-range{font-size:10px;color:var(--ink2);margin-top:3px;}
+.score-total{margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.score-lbl{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:1px;}
+.score-val{font-family:'Fraunces',serif;font-size:24px;font-weight:700;}
+.extra-info{margin-top:8px;font-size:11px;font-weight:600;color:var(--accent);}
+.extra-lbl{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;}
+.sim-card-btn{display:block;width:100%;margin-top:10px;background:var(--accent);color:#fff;border:none;border-radius:7px;padding:8px;font-size:12px;font-weight:700;cursor:pointer;transition:background 0.13s;text-align:center;}
+.sim-card-btn:hover{background:#155535;}
+
+/* Card footer */
+.cfooter{border-top:1px solid var(--border);padding:11px 20px;display:flex;gap:16px;flex-wrap:wrap;background:var(--bg);}
+.cfi{flex:1;min-width:120px;}
+.cfi-l{font-size:9px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:2px;}
+.cfi-v{font-size:12px;font-weight:600;color:var(--ink2);}
+
+/* DISCLAIMER */
+.disc{max-width:960px;margin:0 auto 32px;padding:0 18px;}
+.disc-box{background:var(--yellow-bg);border:1px solid var(--yellow-l);border-radius:10px;padding:12px 16px;font-size:11px;color:var(--yellow);line-height:1.7;}
+
+/* FOOTER */
+footer{background:var(--white);border-top:1px solid var(--border);padding:20px;text-align:center;font-size:11px;color:var(--muted);line-height:2;}
+
+@keyframes fu{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.card{animation:fu 0.28s ease both;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo"><span class="logo-flag">🇺🇾</span> DineroClaro</div>
+  <div class="nav-right">
+    <span class="nav-badge">Independiente</span>
+    <span class="nav-update">Mar 2026</span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-pill">Guía financiera independiente · Uruguay</div>
+  <h1>Tu guía para entender<br/><em>todo sobre tu dinero</em></h1>
+  <p class="hero-sub">Comparamos créditos, tarjetas, prepagas, billeteras, cooperativas y BNPL para que tomes la mejor decisión con tu plata.</p>
+  <div class="hero-cats" id="heroCats"></div>
+</div>
+
+<!-- SIMULATOR -->
+<div class="sim-wrap">
+  <div class="sim">
+    <div class="sim-label">Simulador de cuota</div>
+    <div class="sim-row">
+      <div class="sf"><label>Monto ($UY)</label><input type="number" id="sM" value="100000" step="5000"/></div>
+      <div class="sf"><label>Cuotas</label><input type="number" id="sN" value="24" min="1" max="60"/></div>
+      <div class="sf"><label>Costo anual %</label><input type="number" id="sT" value="28" step="0.5"/></div>
+      <button class="sim-go" onclick="simular()">Calcular →</button>
+    </div>
+    <div class="sim-out" id="simOut">
+      <div class="soi"><div class="soi-l">Cuota mensual</div><div class="soi-v" id="soC">—</div></div>
+      <div class="soi"><div class="soi-l">Total a pagar</div><div class="soi-v" id="soT">—</div></div>
+      <div class="soi"><div class="soi-l">Costo del crédito</div><div class="soi-v" id="soCo">—</div></div>
+      <div class="soi"><div class="soi-l">Pagás de más</div><div class="soi-v" id="soP" style="color:var(--red)">—</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrap"><div class="tabs" id="tabs"></div></div>
+
+<!-- FILTERS -->
+<div class="frow" id="frow">
+  <span class="flbl">Perfil:</span>
+  <button class="fb on" onclick="setF('p','todos')">Todos</button>
+  <button class="fb" onclick="setF('p','buen_historial')">Buen historial</button>
+  <button class="fb" onclick="setF('p','clearing')">Con clearing</button>
+  <button class="fb" onclick="setF('p','jubilado')">Jubilados</button>
+  <button class="fb" onclick="setF('p','sin_cuenta')">Sin cuenta bancaria</button>
+  <span class="flbl" style="margin-left:6px;">Ordenar:</span>
+  <select class="ssort" onchange="setSort(this.value)">
+    <option value="score">Mejor puntuación</option>
+    <option value="costo">Menor costo</option>
+    <option value="monto">Mayor monto</option>
+    <option value="acceso">Mayor accesibilidad</option>
+  </select>
+</div>
+
+<div class="rcount" id="rcount"></div>
+<div class="cards" id="cards"></div>
+
+<div class="disc">
+  <div class="disc-box"><strong>Datos orientativos</strong> a marzo 2026. Verificá siempre en cada institución antes de contratar. DineroClaro es un comparador independiente y no cobra comisiones por posicionamiento. Regulado por BCU.</div>
+</div>
+
+<footer>
+  <strong>DineroClaro Uruguay</strong> · Comparador financiero independiente · BCU · Mar 2026<br/>
+  Créditos · Tarjetas · Prepagas · Billeteras · Cooperativas · BNPL · Hecho para uruguayos<br/>dineroclaro.uy
+</footer>
+
+<script>
+const fmt = n => '$'+Math.round(n).toLocaleString('es-UY');
+const SC = n => n>=8?'var(--green)':n>=5?'var(--yellow)':'var(--red)';
+
+function simular(){
+  const M=parseFloat(document.getElementById('sM').value)||100000;
+  const n=parseInt(document.getElementById('sN').value)||24;
+  const tea=parseFloat(document.getElementById('sT').value)||28;
+  const r=Math.pow(1+tea/100,1/12)-1;
+  const c=M*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);
+  const tot=c*n, costo=tot-M;
+  document.getElementById('soC').textContent=fmt(c);
+  document.getElementById('soT').textContent=fmt(tot);
+  document.getElementById('soCo').textContent=fmt(costo);
+  document.getElementById('soP').textContent=`+${fmt(costo)} (${Math.round(costo/M*100)}%)`;
+  document.getElementById('simOut').classList.add('on');
+}
+
+const TABS = [
+  {key:'creditos',    label:'Créditos Personales'},
+  {key:'cooperativas',label:'Cooperativas'},
+  {key:'tarjetas',    label:'Tarjetas de Crédito'},
+  {key:'prepagas',    label:'Tarjetas Prepagas'},
+  {key:'billeteras',  label:'Billeteras Digitales'},
+  {key:'bnpl',        label:'Cuotas sin Tarjeta'},
+];
+
+// Carga datos desde data.json (se actualiza automáticamente cada día)
+let data = {};
+fetch('data.json')
+  .then(r => r.json())
+  .then(json => {
+    data = json;
+    // Actualizar fecha en nav
+    if(json.ultima_actualizacion){
+      document.querySelector('.nav-update').textContent = json.ultima_actualizacion;
+    }
+    renderAll();
+  })
+  .catch(() => {
+    // Fallback: si no hay data.json, mostrar mensaje
+    document.getElementById('cards').innerHTML =
+      '<p style="text-align:center;padding:40px;color:var(--muted)">Cargando datos...</p>';
+  });
+
+const SCORE_LABELS = {costo:'Costo',acceso:'Acceso',velocidad:'Velocidad',digital:'Digital'};
+let activeTab='creditos', activeP='todos', activeSort='score';
+
+function renderAll(){
+
+function setTab(t){
+  activeTab=t; activeP='todos'; activeSort='score';
+  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('on',b.dataset.tab===t));
+  document.querySelectorAll('.fb').forEach((b,i)=>b.classList.toggle('on',i===0));
+  document.querySelector('.ssort').value='score';
+  render();
+}
+function setF(type,val){
+  if(type==='p') activeP=val;
+  document.querySelectorAll('.fb').forEach(b=>{
+    const v=b.getAttribute('onclick').match(/'([^']+)'\)$/)?.[1];
+    b.classList.toggle('on',v===val);
+  });
+  render();
+}
+function setSort(v){activeSort=v;render();}
+
+function render(){
+  let list=[...(data[activeTab]||[])];
+  if(activeP!=='todos') list=list.filter(d=>d.perfiles.includes(activeP)||d.perfiles.includes('todos'));
+  list.sort((a,b)=>{
+    if(activeSort==='costo')  return a.costo-b.costo;
+    if(activeSort==='monto')  return b.monto-a.monto;
+    if(activeSort==='acceso') return b.score.acceso-a.score.acceso;
+    const sa=Object.values(a.score).reduce((x,y)=>x+y,0);
+    const sb=Object.values(b.score).reduce((x,y)=>x+y,0);
+    return sb-sa;
+  });
+
+  document.getElementById('rcount').textContent=`${list.length} opción${list.length!==1?'es':''} encontrada${list.length!==1?'s':''}`;
+
+  document.getElementById('cards').innerHTML=list.map((d,i)=>{
+    const ts=Math.round(Object.values(d.score).reduce((a,b)=>a+b,0)/Object.keys(d.score).length*10)/10;
+    const isCred=activeTab==='creditos'||activeTab==='cooperativas';
+    const isBNPL=activeTab==='bnpl';
+    const isPago=activeTab==='billeteras'||activeTab==='prepagas';
+    const isTarj=activeTab==='tarjetas';
+
+    const rateDisplay = d.costo===0 && (isPago||isTarj)
+      ? `<div class="rate-main free">GRATIS</div><div class="rate-unit">${d.costoR}</div>`
+      : isBNPL
+      ? `<div class="rate-main free" style="font-size:18px;">Sin tarjeta</div><div class="rate-unit">${d.costoR}</div>`
+      : `<div class="rate-main">${d.costo}${isCred?'%':d.costo===0?'':''}</div><div class="rate-unit">${isCred?'TEA anual orientativa':'costo anual'}</div><div class="rate-range">${d.costoR}</div>`;
+
+    const extraInfo = isCred && d.monto>0
+      ? `<div class="extra-info">$${d.monto.toLocaleString('es-UY')}</div><div class="extra-lbl">Monto máximo</div><div style="font-size:11px;color:var(--ink2);margin-top:2px;">Hasta ${d.plazo} meses</div>`
+      : isPago && d.monto>0
+      ? `<div class="extra-info">$${d.monto.toLocaleString('es-UY')}</div><div class="extra-lbl">Límite diario</div>`
+      : isBNPL && d.monto>0
+      ? `<div class="extra-info">$${d.monto.toLocaleString('es-UY')}</div><div class="extra-lbl">Monto máximo</div>`
+      : '';
+
+    const simBtn = isCred ? `<button class="sim-card-btn" onclick="document.getElementById('sT').value='${d.costo}';simular();window.scrollTo({top:0,behavior:'smooth'})">Simular cuota →</button>` : '';
+
+    return `<div class="card${d.top?' top':''}" style="animation-delay:${i*0.04}s">
+      ${d.top?`<div class="top-banner">⭐ Mejor opción · ${activeTab==='creditos'?'Menor costo':activeTab==='bnpl'?'Más completo':'Recomendado'}</div>`:''}
+      <div class="cbody">
+        <div class="clogo" style="border-color:${d.lc}22;background:${d.lc}11;"><span style="color:${d.lc}">${d.logo}</span></div>
+        <div>
+          <div class="cname">${d.name}</div>
+          <div class="ctype">${d.tipo}</div>
+          <div class="cdesc">${d.desc}</div>
+          ${Object.entries(d.score).map(([k,v])=>`
+            <div class="srow">
+              <span class="slbl">${SCORE_LABELS[k]}</span>
+              <div class="sbg"><div class="sfill" style="width:${v*10}%;background:${SC(v)};"></div></div>
+              <span class="snum" style="color:${SC(v)}">${v}</span>
+            </div>`).join('')}
+          <div class="pcgrid">
+            ${d.pros.map(p=>`<div class="pci"><span class="pci-ico" style="color:var(--green)">✓</span><span style="color:var(--ink2)">${p}</span></div>`).join('')}
+            ${d.cons.map(c=>`<div class="pci"><span class="pci-ico" style="color:var(--red)">✗</span><span style="color:var(--muted)">${c}</span></div>`).join('')}
+          </div>
+          <div class="tags">${d.tags.map(t=>`<span class="tag ${t.c}">${t.t}</span>`).join('')}</div>
+        </div>
+        <div class="cright">
+          <div class="rate-box">
+            ${rateDisplay}
+            ${extraInfo}
+            <div class="score-total">
+              <div class="score-lbl">Score DineroClaro</div>
+              <div class="score-val" style="color:${SC(ts)}">${ts}<span style="font-size:13px;color:var(--muted)">/10</span></div>
+            </div>
+          </div>
+          ${simBtn}
+        </div>
+      </div>
+      <div class="cfooter">
+        <div class="cfi"><div class="cfi-l">Retiro / Cobro</div><div class="cfi-v">${d.retiro}</div></div>
+        <div class="cfi"><div class="cfi-l">Clearing</div><div class="cfi-v" style="color:${d.clearing==='Sí acepta'||d.clearing==='Acepta'||d.clearing==='Sí'?'var(--green)':d.clearing==='No acepta'||d.clearing==='No'?'var(--red)':'var(--yellow)'}">${d.clearing}</div></div>
+        <div class="cfi"><div class="cfi-l">Jubilados / Pasivos</div><div class="cfi-v">${d.jubilados}</div></div>
+      </div>
+    </div>`;
+  }).join('')||`<div style="padding:40px;text-align:center;color:var(--muted);">Sin resultados para el perfil seleccionado.</div>`;
+}
+
+// Init tabs
+document.getElementById('tabs').innerHTML = TABS.map(t=>`<button class="tab${t.key==='creditos'?' on':''}" data-tab="${t.key}" onclick="setTab('${t.key}')">${t.label}</button>`).join('');
+document.getElementById('heroCats').innerHTML = TABS.map(t=>`<span class="hcat${t.key==='creditos'?' on':''}" onclick="setTab('${t.key}');document.querySelector('.tabs-wrap').scrollIntoView({behavior:'smooth'})">${t.label}</span>`).join('');
+
+render();
+</script>
+</body>
+</html>
