@@ -7,7 +7,7 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZHSCQM40J"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || []
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-DZHSCQM40J');
@@ -384,6 +384,11 @@ document.getElementById('tabs').innerHTML = TABS.map(t=>`<button class="tab${t.k
 document.getElementById('heroCats').innerHTML = TABS.map(t=>`<span class="hcat${t.key==='creditos'?' on':''}" onclick="setTab('${t.key}');document.querySelector('.tabs-wrap').scrollIntoView({behavior:'smooth'})">${t.label}</span>`).join('');
 
 render();
+  // Expose functions globally for onclick handlers
+  window.setTab = setTab;
+  window.setF = setF;
+  window.setSort = setSort;
+}
 </script>
 </body>
 </html>
