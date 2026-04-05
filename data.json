@@ -164,6 +164,125 @@
       "retiro": false,
       "clearing": false,
       "jubilados": false
+    },
+    {
+      "name": "Creditel",
+      "tipo": "Financiera",
+      "logo": "CT",
+      "lc": "#E63946",
+      "costo": 117,
+      "costoR": "117% TEA",
+      "monto": "Hasta $150.000",
+      "plazo": "Hasta 36 meses",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado"
+      ],
+      "score": 45,
+      "desc": "Financiera tradicional con amplia red de sucursales en todo Uruguay. Proceso rápido y pocos requisitos.",
+      "pros": [
+        "Aprobación rápida",
+        "Muchas sucursales",
+        "Pocos requisitos"
+      ],
+      "cons": [
+        "Tasa muy alta",
+        "Montos limitados"
+      ],
+      "tags": [
+        "Rápido",
+        "Sucursales"
+      ]
+    },
+    {
+      "name": "Pronto!",
+      "tipo": "Financiera",
+      "logo": "PR",
+      "lc": "#FF6B00",
+      "costo": 67,
+      "costoR": "67% TEA",
+      "monto": "Hasta $500.000",
+      "plazo": "Hasta 48 meses",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 62,
+      "desc": "Una de las financieras más grandes de Uruguay con proceso 100% digital disponible.",
+      "pros": [
+        "Proceso digital",
+        "Buenos montos",
+        "Tasa competitiva para financiera"
+      ],
+      "cons": [
+        "Tasa más alta que bancos",
+        "Seguros obligatorios"
+      ],
+      "tags": [
+        "Digital",
+        "Popular"
+      ]
+    },
+    {
+      "name": "Cash",
+      "tipo": "Financiera",
+      "logo": "CA",
+      "lc": "#2D6A4F",
+      "costo": 85,
+      "costoR": "85% TEA",
+      "monto": "Hasta $200.000",
+      "plazo": "Hasta 36 meses",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado"
+      ],
+      "score": 40,
+      "desc": "Financiera enfocada en préstamos personales con requisitos mínimos de documentación.",
+      "pros": [
+        "Requisitos mínimos",
+        "Respuesta rápida"
+      ],
+      "cons": [
+        "Tasa alta",
+        "Montos bajos"
+      ],
+      "tags": [
+        "Fácil acceso",
+        "Rápido"
+      ]
+    },
+    {
+      "name": "Crédito de la Casa",
+      "tipo": "Financiera",
+      "logo": "CC",
+      "lc": "#4A90D9",
+      "costo": 95,
+      "costoR": "95% TEA",
+      "monto": "Hasta $180.000",
+      "plazo": "Hasta 24 meses",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado"
+      ],
+      "score": 38,
+      "desc": "Financiera con presencia en centros comerciales. Orientada a créditos de consumo.",
+      "pros": [
+        "Presencia en shopping",
+        "Sin cita previa"
+      ],
+      "cons": [
+        "Tasa elevada",
+        "Plazos cortos"
+      ],
+      "tags": [
+        "Consumo",
+        "Accesible"
+      ]
     }
   ],
   "cooperativas": [
@@ -267,6 +386,135 @@
       "retiro": true,
       "clearing": true,
       "jubilados": true
+    },
+    {
+      "name": "FUCAC",
+      "tipo": "Cooperativa",
+      "logo": "FU",
+      "lc": "#2E7D32",
+      "costo": 45,
+      "costoR": "40-80% TEA",
+      "monto": "Hasta $800.000",
+      "plazo": "Hasta 60 meses",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 72,
+      "desc": "Federación de cooperativas con la marca Verde. Tasas competitivas y enfoque social.",
+      "pros": [
+        "Tasas cooperativas",
+        "Red amplia",
+        "Enfoque social"
+      ],
+      "cons": [
+        "Requiere ser socio",
+        "Proceso puede demorar"
+      ],
+      "tags": [
+        "Cooperativa",
+        "Verde"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": true
+    },
+    {
+      "name": "COFAC",
+      "tipo": "Cooperativa",
+      "logo": "CF",
+      "lc": "#1565C0",
+      "costo": 35,
+      "costoR": "35% TEA",
+      "monto": "Hasta $600.000",
+      "plazo": "Hasta 48 meses",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado"
+      ],
+      "score": 68,
+      "desc": "Cooperativa de ahorro y crédito con buenas tasas para socios y servicios financieros completos.",
+      "pros": [
+        "Tasa baja",
+        "Atención personalizada"
+      ],
+      "cons": [
+        "Requiere ser socio",
+        "Menos sucursales"
+      ],
+      "tags": [
+        "Baja tasa",
+        "Cooperativa"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": true
+    },
+    {
+      "name": "COMAC",
+      "tipo": "Cooperativa",
+      "logo": "CM",
+      "lc": "#6A1B9A",
+      "costo": 38,
+      "costoR": "38% TEA",
+      "monto": "Hasta $500.000",
+      "plazo": "Hasta 48 meses",
+      "top": false,
+      "perfiles": [
+        "empleado"
+      ],
+      "score": 65,
+      "desc": "Cooperativa médica con servicios financieros para profesionales de la salud y público general.",
+      "pros": [
+        "Buena tasa",
+        "Servicios integrales"
+      ],
+      "cons": [
+        "Orientada a médicos",
+        "Pocas sucursales"
+      ],
+      "tags": [
+        "Profesionales",
+        "Cooperativa"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": false
+    },
+    {
+      "name": "FUCEREP",
+      "tipo": "Cooperativa",
+      "logo": "FR",
+      "lc": "#D84315",
+      "costo": 42,
+      "costoR": "42% TEA",
+      "monto": "Hasta $400.000",
+      "plazo": "Hasta 36 meses",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado"
+      ],
+      "score": 60,
+      "desc": "Cooperativa de empleados públicos con créditos accesibles y descuento por planilla.",
+      "pros": [
+        "Descuento por recibo",
+        "Tasa accesible"
+      ],
+      "cons": [
+        "Solo empleados públicos",
+        "Montos limitados"
+      ],
+      "tags": [
+        "Público",
+        "Cooperativa"
+      ],
+      "retiro": false,
+      "clearing": false,
+      "jubilados": true
     }
   ],
   "tarjetas": [
@@ -369,6 +617,155 @@
       "retiro": false,
       "clearing": false,
       "jubilados": false
+    },
+    {
+      "name": "Visa Itaú Volar",
+      "tipo": "Banco",
+      "logo": "IT",
+      "lc": "#FF6600",
+      "costo": 75,
+      "costoR": "75% TEA revolving",
+      "monto": "Según perfil",
+      "plazo": "Revolving",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "independiente"
+      ],
+      "score": 70,
+      "desc": "Tarjeta Visa del banco Itaú con programa de puntos Volar para canje en viajes y productos.",
+      "pros": [
+        "Programa Volar",
+        "Acceso a salas VIP",
+        "Amplia aceptación"
+      ],
+      "cons": [
+        "Costo de mantenimiento",
+        "Tasa revolving alta"
+      ],
+      "tags": [
+        "Puntos",
+        "Viajes"
+      ]
+    },
+    {
+      "name": "BBVA Visa",
+      "tipo": "Banco",
+      "logo": "BB",
+      "lc": "#004481",
+      "costo": 73,
+      "costoR": "73% TEA revolving",
+      "monto": "Según perfil",
+      "plazo": "Revolving",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "independiente"
+      ],
+      "score": 68,
+      "desc": "Tarjeta Visa de BBVA con beneficios en comercios adheridos y app móvil completa.",
+      "pros": [
+        "App completa",
+        "Descuentos en comercios",
+        "Banco internacional"
+      ],
+      "cons": [
+        "Costo mensual",
+        "Requisitos de ingreso"
+      ],
+      "tags": [
+        "Banco",
+        "Descuentos"
+      ]
+    },
+    {
+      "name": "Passcard",
+      "tipo": "Emisor",
+      "logo": "PC",
+      "lc": "#9C27B0",
+      "costo": 100,
+      "costoR": "100% TEA revolving",
+      "monto": "Hasta $300.000",
+      "plazo": "Revolving",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado"
+      ],
+      "score": 42,
+      "desc": "Tarjeta de crédito con requisitos flexibles, orientada a personas sin historial crediticio.",
+      "pros": [
+        "Fácil aprobación",
+        "Pocos requisitos"
+      ],
+      "cons": [
+        "Tasa muy alta",
+        "Aceptación limitada"
+      ],
+      "tags": [
+        "Accesible",
+        "Sin historial"
+      ]
+    },
+    {
+      "name": "OCA Blue",
+      "tipo": "Emisor",
+      "logo": "OB",
+      "lc": "#0288D1",
+      "costo": 0,
+      "costoR": "Sin costo",
+      "monto": "Según perfil",
+      "plazo": "Revolving",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 75,
+      "desc": "Tarjeta sin costo de emisión ni mantenimiento de OCA. Ideal como primera tarjeta.",
+      "pros": [
+        "Sin costo",
+        "Amplia aceptación en UY",
+        "App OCA"
+      ],
+      "cons": [
+        "Sin programa de puntos premium",
+        "Solo mercado local"
+      ],
+      "tags": [
+        "Gratis",
+        "Popular"
+      ]
+    },
+    {
+      "name": "Cabal",
+      "tipo": "Emisor",
+      "logo": "CB",
+      "lc": "#1B5E20",
+      "costo": 85,
+      "costoR": "85% TEA revolving",
+      "monto": "Hasta $250.000",
+      "plazo": "Revolving",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado"
+      ],
+      "score": 48,
+      "desc": "Red de tarjetas con presencia regional. Aceptada en comercios adheridos en Uruguay y Argentina.",
+      "pros": [
+        "Aceptación regional",
+        "Cuotas en comercios"
+      ],
+      "cons": [
+        "Menor aceptación que Visa/MC",
+        "Pocos beneficios"
+      ],
+      "tags": [
+        "Regional",
+        "Cuotas"
+      ]
     }
   ],
   "prepagas": [
@@ -477,6 +874,68 @@
       "retiro": false,
       "clearing": true,
       "jubilados": true
+    },
+    {
+      "name": "Midinero",
+      "tipo": "Prepaga",
+      "logo": "MD",
+      "lc": "#00BFA5",
+      "costo": 0,
+      "costoR": "Sin costo",
+      "monto": "Hasta $200.000",
+      "plazo": "Recargable",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente",
+        "menor"
+      ],
+      "score": 78,
+      "desc": "Tarjeta Mastercard prepaga con Apple Pay y Google Pay. Ideal para compras online y control de gastos.",
+      "pros": [
+        "Apple Pay/Google Pay",
+        "Sin costo",
+        "Control total de gastos"
+      ],
+      "cons": [
+        "Límites de carga",
+        "Sin crédito"
+      ],
+      "tags": [
+        "Digital",
+        "Gratis"
+      ]
+    },
+    {
+      "name": "Prex Black",
+      "tipo": "Prepaga",
+      "logo": "PB",
+      "lc": "#212121",
+      "costo": 0,
+      "costoR": "Sin costo",
+      "monto": "Hasta $500.000",
+      "plazo": "Recargable",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "independiente"
+      ],
+      "score": 72,
+      "desc": "Versión premium de Prex con límites más altos y beneficios exclusivos en comercios.",
+      "pros": [
+        "Límites altos",
+        "Beneficios premium",
+        "Sin costo"
+      ],
+      "cons": [
+        "Requiere ingresos mínimos",
+        "Menos beneficios que TC tradicional"
+      ],
+      "tags": [
+        "Premium",
+        "Sin costo"
+      ]
     }
   ],
   "billeteras": [
@@ -584,6 +1043,67 @@
       "retiro": true,
       "clearing": true,
       "jubilados": true
+    },
+    {
+      "name": "OCA Billetera",
+      "tipo": "Billetera",
+      "logo": "OW",
+      "lc": "#0288D1",
+      "costo": 0,
+      "costoR": "Sin costo",
+      "monto": "Según tarjeta",
+      "plazo": "Inmediato",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 65,
+      "desc": "Billetera digital de OCA para pagos con QR y gestión de tarjetas OCA desde el celular.",
+      "pros": [
+        "Integración OCA",
+        "Pagos QR",
+        "Sin costo"
+      ],
+      "cons": [
+        "Solo tarjetas OCA",
+        "Menos funciones que competencia"
+      ],
+      "tags": [
+        "OCA",
+        "QR"
+      ]
+    },
+    {
+      "name": "Itaú Wallet",
+      "tipo": "Billetera bancaria",
+      "logo": "IW",
+      "lc": "#FF6600",
+      "costo": 0,
+      "costoR": "Sin costo",
+      "monto": "Según cuenta",
+      "plazo": "Inmediato",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "independiente"
+      ],
+      "score": 62,
+      "desc": "Billetera digital integrada en la app de Itaú para pagos y transferencias entre clientes.",
+      "pros": [
+        "Integrada al banco",
+        "Transferencias gratis",
+        "Segura"
+      ],
+      "cons": [
+        "Solo clientes Itaú",
+        "Funciones limitadas"
+      ],
+      "tags": [
+        "Banco",
+        "Transferencias"
+      ]
     }
   ],
   "bnpl": [
@@ -656,6 +1176,67 @@
       "retiro": false,
       "clearing": false,
       "jubilados": false
+    },
+    {
+      "name": "Mercado Crédito",
+      "tipo": "Fintech",
+      "logo": "MC",
+      "lc": "#FFE600",
+      "costo": 50,
+      "costoR": "~50% TEA",
+      "monto": "Hasta $100.000",
+      "plazo": "3-12 cuotas",
+      "top": true,
+      "perfiles": [
+        "empleado",
+        "independiente"
+      ],
+      "score": 70,
+      "desc": "Créditos y cuotas sin tarjeta dentro del ecosistema Mercado Libre/Mercado Pago.",
+      "pros": [
+        "Integrado a ML",
+        "Sin tarjeta",
+        "Proceso 100% digital"
+      ],
+      "cons": [
+        "Solo en Mercado Libre",
+        "Tasas variables"
+      ],
+      "tags": [
+        "E-commerce",
+        "Digital"
+      ]
+    },
+    {
+      "name": "OCA Cuotas",
+      "tipo": "Emisor",
+      "logo": "OQ",
+      "lc": "#0288D1",
+      "costo": 0,
+      "costoR": "Según comercio",
+      "monto": "Según compra",
+      "plazo": "3-12 cuotas",
+      "top": false,
+      "perfiles": [
+        "empleado",
+        "jubilado",
+        "independiente"
+      ],
+      "score": 65,
+      "desc": "Plan de cuotas de OCA disponible en comercios adheridos sin necesidad de tarjeta de crédito.",
+      "pros": [
+        "Amplia red de comercios",
+        "Sin interés en seleccionados",
+        "Flexible"
+      ],
+      "cons": [
+        "Solo comercios adheridos",
+        "Requiere aprobación"
+      ],
+      "tags": [
+        "Cuotas",
+        "Comercios"
+      ]
     }
   ]
 }
