@@ -34,7 +34,7 @@ def fetch_bcu_rates():
                 rates["BROU"] = float(brou_match.group(1).replace(",", "."))
     except Exception as e:
         print(f"BCU no disponible: {e}")
-    fallback = {"BROU": 23.0, "Santander": 29.0, "BBVA": 28.0, "Itau": 30.0, "COPAC": 30.34}
+    fallback = {"BROU": 23.0, "Santander": 29.0, "BBVA": 28.0, "Itau": 30.0, "COPAC": 30.34, "Creditel": 117.0, "Pronto": 67.0, "Cash": 85.0, "Credito de la Casa": 95.0, "FUCAC": 45.0, "COFAC": 35.0, "COMAC": 38.0, "FUCEREP": 42.0}
     for k, v in fallback.items():
         if k not in rates:
             rates[k] = v
