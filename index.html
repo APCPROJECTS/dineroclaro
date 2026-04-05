@@ -285,6 +285,9 @@ fetch('data.json')
         if (typeof d.retiro === 'boolean') d.retiro = d.retiro ? 'Sí' : 'No';
         if (typeof d.clearing === 'boolean') d.clearing = d.clearing ? 'Sí acepta' : 'No acepta';
         if (typeof d.jubilados === 'boolean') d.jubilados = d.jubilados ? 'Sí' : 'No';
+           if (d.retiro === undefined) d.retiro = 'N/A';
+           if (d.clearing === undefined) d.clearing = 'N/A';
+           if (d.jubilados === undefined) d.jubilados = 'N/A';
         return d;
       });
     });
